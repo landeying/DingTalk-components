@@ -3,7 +3,7 @@
 .img_none {
   margin: 210rpx auto 40rpx;
   display: block;
-  width: 268rpx;
+  width: 364rpx;
   height: 238rpx;
 }
 
