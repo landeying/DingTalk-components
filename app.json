@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/f2Interval/f2Interval",
+    "pages/loading/loading",
+    "pages/noData/noData",
+    "pages/setFields/setFields",
+    "pages/table/table",
+    "pages/cascade/cascade",
+    "pages/cascade/cascade",
+    "pages/scrollView/scrollView"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

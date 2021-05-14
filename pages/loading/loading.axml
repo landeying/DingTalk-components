@@ -1,0 +1,17 @@
+<view class="flex btn-wrap">
+  <button onTap="onShowLoading" type="{{id=='1'?'primary':''}}" data-id="1">全屏</button>
+  <button onTap="onShowLoading" type="{{id=='2'?'primary':''}}" data-id="2">带有蒙层</button>
+  <button onTap="onShowLoading" type="{{id=='3'?'primary':''}}" data-id="3">不带蒙层</button>
+</view>
+
+<!-- loading 全屏 -->
+<loading show="{{loading1}}"/>
+
+<!-- loading1 带有蒙层 -->
+<loading show="{{loading2}}" className="loading1"/>
+
+<!-- loading2 不带蒙层单独模块使用 -->
+<view class="loading-wrap flex">
+  <view a:if="{{!loading3}}">不带蒙层，模块中使用</view>
+  <loading show="{{loading3}}" className="loading2"/>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "scroll": "/components/scrollView/scrollView"
+  },
+  "defaultTitle": "分页加载"
+}

@@ -1,0 +1,14 @@
+/* 无数据展示 */
+
+.img_none {
+  margin: 210rpx auto 40rpx;
+  display: block;
+  width: 268rpx;
+  height: 238rpx;
+}
+
+.data_null {
+  text-align: center;
+  font-size: 30rpx;
+  color: #666;
+}

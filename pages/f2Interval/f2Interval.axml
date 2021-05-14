@@ -1,0 +1,9 @@
+<view a:for="{{tabs}}" key="{{index}}">
+  <f2-interval 
+    a:if="{{item.data.length>0}}" 
+    data="{{item.data}}" 
+    id="{{item.id}}"
+  ></f2-interval>
+</view>
+
+<button type="primary" onTap="handleRefresh">刷新</button>

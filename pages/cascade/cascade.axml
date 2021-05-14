@@ -1,0 +1,25 @@
+<view class="scroll-item flex">
+  <view class="label flex-0">请选择</view>
+  <view class="flex-0 input-wrap">
+    <view class="input-select position-relative type-wrap">
+      <view class="type-name" onTap="handleShow">{{typeName}}</view>
+      <view class="select-icon icon-arrow" a:if="{{typeName===''}}"></view>
+      <view 
+        class="select-icon icon-clear" 
+        a:if="{{typeName!==''}}"
+        onTap="handleClear" 
+        data-type="typeName"
+      ></view>
+    </view>
+  </view>
+</view>
+
+<cascade 
+  show="{{show}}" 
+  clear="{{clear}}"
+  lock="{{lock}}"
+  treeList="{{treeList}}" 
+  onClose="onClose" 
+  onClear="onClear"
+  onGetName="getName"
+/>

@@ -1,0 +1,56 @@
+<view class="wrap">
+  <scroll-view scroll-x="{{true}}" class="scroll" scroll-y="{{true}}">
+    <view class="table">
+      <view class="theader flex" style="position: {{position}}">
+        <view 
+          class="th font-weight-bold " 
+          a:for="{{labelList}}" 
+          key="{{index}}" 
+          style="width: {{labelList.length > 4 ? '170rpx' :`${100/labelList.length}%`}}"
+        >
+          <view class="th-item">
+            {{item.label}}
+          </view>
+        </view>
+      </view>
+      <view class="tbody flex">
+        <block a:if="{{propList.length > 0}}">
+          <view 
+            a:for="{{propList}}"
+            key="{{index}}" 
+            class="tr flex"
+          >
+            <view 
+              class="td"
+              style="width: {{labelList.length > 4 && abelList.length !== 0 ? '170rpx' :`${100/labelList.length}%`}}"
+              a:for="{{labelList}}" 
+              a:for-item="itm" 
+              a:for-index="idx"
+              key="{{idx}}"
+            >
+              <view class="td-item">
+                {{item[itm.prop]}}
+              </view>
+            </view>
+          </view>
+        </block>
+        <view a:else class="noData">暂无数据</view>
+      </view>
+      <view class="tfooter" a:if="{{summationData.length > 0}}">
+        <view class="tr flex">
+          <view 
+            class="td" 
+            a:for="{{summationData}}" 
+            key="{{index}}" 
+            style="width: {{summationData.length > 4 ? '170rpx' :`${100/labelList.length}%`}}"
+          >
+            <view class="td-item">{{item}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- 向左滑动查看 -->
+<view class="left-view" a:if="{{labelList.length > 4}}">—— 向左滑动查看 ——</view>

@@ -1,0 +1,95 @@
+/* 滚动 */
+.scroll {
+  position: absolute;
+  top: 0px;
+  padding: 20rpx 30rpx 110rpx;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+/* 分页加载 */
+.spinner {
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.spinner .bounce {
+  margin-top: 20rpx;
+  width: 13rpx;
+  height: 21rpx;
+  display: inline-block;
+  animation-fill-mode: both;
+  margin-left: 13rpx;
+  transform: skewX(-15deg);
+}
+  
+.spinner .bounce1 {
+  background: #3296FA;
+  animation: bouncedelay1 2.1s infinite linear;
+}
+
+.spinner .bounce2 {
+  background: #9DCDEF;
+  animation: bouncedelay2 2.1s infinite linear;
+}
+
+.spinner .bounce3 {
+  background: #EAECF3;
+  animation: bouncedelay3 2.1s infinite linear;
+}
+
+.spinner .spinner-word {
+  margin-top: 24rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: #999999;
+}
+.scroll_Lower {
+  padding: 30rpx;
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+}
+.scroll_Lower text {
+  padding: 0 20rpx;
+}
+@keyframes bouncedelay1 {
+  0% {
+    background: #3296FA;
+  }
+  50% {
+    background: #9DCDEF;
+  }
+  100% {
+    background: #EAECF3;
+  }
+}
+
+@keyframes bouncedelay2 {
+  0% {
+    background: #9DCDEF;
+  }
+  50% {
+    background: #EAECF3;
+  }
+  100% {
+    background: #3296FA;
+  }
+}
+
+@keyframes bouncedelay3 {
+  0% {
+    background: #EAECF3;
+  }
+  50% {
+    background: #3296FA;
+  }
+  100% {
+    background: #9DCDEF;
+  }
+}

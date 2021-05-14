@@ -1,0 +1,85 @@
+.wrap {
+  border-radius: 0;
+}
+
+.scroll {
+  max-height: calc(52vh - 120rpx);
+  box-sizing: border-box;
+  overflow: auto!important;
+}
+
+.table {
+  width: auto;
+}
+
+.theader {
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(239, 247, 255);
+}
+
+.tbody {
+  flex-direction: column;
+}
+
+.th, .td {
+  min-width: 25%;
+  flex-wrap: nowrap;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.th {
+  font-size: 28rpx;
+}
+
+.th-item {
+  padding: 20rpx 8rpx 16rpx;
+  background-color: rgb(239, 247, 255);
+}
+
+.td-item {
+  padding: 16rpx 8rpx;
+  font-size: 26rpx;
+}
+
+.tr:nth-child(2n) .td {
+  background-color: rgb(255, 249, 244, 1);
+}
+
+.tr:nth-child(2n+1) .td {
+  background-color: #fff;
+}
+
+/* .tr .td:first-child {
+  position: absolute;
+  left: 0;
+} */
+
+.tfooter {
+  position: sticky;
+  width: 100%;
+  bottom: 0px;
+}
+
+.tfooter .td {
+  background-color: rgb(245, 247, 250)!important;
+}
+
+.left-view {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.noData {
+  min-height: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+  font-size: 28rpx;
+  color: #999;
+}

@@ -1,0 +1,7 @@
+<!-- loading -->
+<view a:if="{{show}}" class="loading flex {{className}}">
+  <view class="loader flex">
+    <view class="loader-item"></view>
+    <view>{{content}}</view>
+  </view>
+</view>

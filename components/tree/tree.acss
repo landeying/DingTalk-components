@@ -1,0 +1,33 @@
+.main {
+  padding: 0 40rpx 30rpx 0;
+  font-size: 24rpx;
+  align-items: center;
+  line-height: 30rpx;
+}
+
+.main image {
+  margin-right: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.show-select-wrap {
+  overflow-x: auto;
+  width: 690rpx;
+  margin-bottom: 60rpx;
+  padding: 20rpx 30rpx;
+  background: #E0F0FC;
+  white-space: nowrap;
+  font-size: 22rpx;
+  box-sizing: border-box;
+}
+
+.select-item {
+  padding: 0 20rpx;
+  border-right: 1px solid #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+

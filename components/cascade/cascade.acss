@@ -1,0 +1,10 @@
+@import '/assets/style/popup.acss';
+
+.popup .scroll-view {
+  padding: 30rpx 0;
+  height: calc(85vh - 300rpx);
+}
+
+.parents {
+  padding: 0 30rpx;
+}

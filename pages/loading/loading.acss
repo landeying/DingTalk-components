@@ -1,0 +1,25 @@
+page {
+  background-color: #f5f5f5;
+}
+.btn-wrap button {
+  width: 200rpx;
+}
+
+.btn-wrap {
+  padding: 50rpx 30rpx;
+  justify-content: space-between;
+}
+
+.loading-wrap {
+  margin: 40rpx auto;
+  width: 690rpx;
+  height: 500rpx;
+  background-color: #fff;
+  border-radius: 40rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading2 {
+  background-color: transparent;
+}

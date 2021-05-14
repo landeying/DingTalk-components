@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "级联",
+  "usingComponents": {
+    "cascade": "/components/cascade/cascade"
+  }
+}

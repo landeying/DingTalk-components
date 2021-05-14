@@ -1,0 +1,70 @@
+.scroll-item {
+  margin-bottom: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  margin-right: 30rpx;
+  font-size: 28rpx;
+}
+
+.input-select {
+  padding: 15rpx 20rpx;
+  min-width: 150rpx;
+  min-height: 70rpx;
+  background: #F6F6F6;
+  border-radius: 35px;
+  line-height: 40rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  color: #999;
+  /* text-align: center; */
+  border: 1px solid #F6F6F6;
+}
+
+.input-select-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-wrap .input-select {
+  width: 514rpx;
+}
+
+.type-wrap .select-icon {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+
+.select-icon {
+  /* margin-left: 20rpx; */
+  width: 40rpx;
+  height: 40rpx;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.icon-arrow {
+  background-image: url(/assets/image/icon_arrow1.png);
+  background-size: 20rpx 12rpx;
+}
+
+.icon-clear {
+  background-image: url(/assets/image/icon_clear1.png);
+  background-size: 24rpx 24rpx;
+}
+
+.type-wrap .select-icon {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+
+.type-name {
+  width: 88%;
+  min-height: 40rpx;
+}

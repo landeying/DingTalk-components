@@ -1,0 +1,21 @@
+@import '/assets/style/popup.acss';
+
+.fields-wrap {
+  padding: 0 30rpx;
+  flex-wrap: wrap;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.fields {
+  margin-right: 20rpx;
+  margin-bottom: 30rpx;
+  padding: 23rpx 30rpx;
+  min-width: 200rpx;
+  background: #F6F6F6;  
+  border: 1px solid #F6F6F6;
+  text-align: center;
+  border-radius: 35rpx;
+  box-sizing: border-box;
+}
+

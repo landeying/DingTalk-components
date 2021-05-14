@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "popup": "mini-ali-ui-rpx/es/popup/index"
+  }
+}

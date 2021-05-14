@@ -1,0 +1,7 @@
+page {
+  background-color: #fff;
+}
+
+.title {
+  padding: 60rpx 30rpx 30rpx;
+}

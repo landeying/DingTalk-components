@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "设置显示项",
+  "usingComponents": {
+    "set-fields": "/components/setFields/setFields"
+  }
+}

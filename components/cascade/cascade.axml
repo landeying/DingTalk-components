@@ -1,0 +1,35 @@
+<!-- 产品类型查询 -->
+<popup 
+  show="{{show}}" 
+  position="bottom"
+  disableScroll="{{false}}"
+  zIndex="999"
+>
+  <view class="popup popup-product">
+    <view class="popup-header flex">
+      <view>级联</view>
+      <view class="close-popup" onTap="onClose"></view>
+    </view>
+    <view class="parents">
+      <view class="show-select-wrap" a:if="{{pid!==0&&showSelect}}">
+        <view class="flex">
+          <view 
+            a:for="{{selectList}}" 
+            key="{{index}}"
+            class="select-item flex-0"
+            style="max-width:{{690/selectList.length}}rpx"
+            data-pid="{{item.pid}}"
+            data-index="{{index}}"
+            onTap="selectBack"
+          >
+            {{item.name}}
+          </view>
+          <view class="fc-018FFB flex-0" style="padding: 0 30rpx 0 20rpx">请选择</view>
+        </view>
+      </view>
+      <scroll-view scroll-y="{{true}}" class="scroll-view">
+        <tree list="{{treeList}}" onSelect="select" onChildSelect="childSelect" pid="{{pid}}" cid="{{initTreeData.typeId}}"></tree>  
+      </scroll-view>
+    </view>
+  </view>
+</popup>

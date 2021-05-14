@@ -1,0 +1,33 @@
+.popup {
+  height: 85vh;
+  background: #fff;
+  border-radius: 34rpx 34rpx 0px 0px;
+}
+
+.popup-header {
+  padding: 0 30rpx;
+  height: 70rpx;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+  line-height: 70rpx;
+  font-weight: bold;
+}
+
+.popup .popup-header {
+  height: 142rpx;
+  line-height: 142rpx;
+}
+
+.close-popup {
+  width: 70rpx;
+  height: 70rpx;
+  background: url(/assets/image/icon_close.png) no-repeat right center;
+  background-size: 22rpx 22rpx;
+}
+
+.selected-field {
+  background: #E9F5FE!important;
+  border: 1px solid #429AFD!important;
+  color: #018FFB!important;
+}

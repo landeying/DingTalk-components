@@ -1,0 +1,17 @@
+<view>
+  <scroll-view scroll-y="{{true}}" onScrollToLower="scroll" class="scroll">
+    <view>
+      <slot name="scroll"/>
+    </view>
+    <!-- 分页加载loading -->
+    <view class="spinner" style="{{showData.show ? '' : 'display:none'}}">
+      <view class="bounce1 bounce"></view>
+      <view class="bounce2 bounce"></view>
+      <view class="bounce3 bounce"></view>
+      <view style="margin:20rpx 0 0 20rpx;color:#999;">加载中...</view>
+    </view>
+    <!-- 没有更多了 -->
+    <view class="scroll_Lower" a:if="{{showData.show_no_more}}">——
+      <text>没有更多了</text> ——</view>
+  </scroll-view>
+</view>

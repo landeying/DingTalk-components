@@ -1,0 +1,19 @@
+<view class="flex" style="flex-direction:{{direction}}">
+  <block a:for="{{list}}" key="{{index}}">
+    <view class="tree-wrap">
+      <view class="main flex color-99" onTap="select"
+        data-name="{{item.TypeName}}" 
+        data-cid="{{item.TypeId}}" 
+        data-pid="{{item.Superior}}"
+        data-len="{{item.children?item.children.length:0}}" 
+        a:if="{{item.Superior===pid}}"
+      >
+        <image mode="scaleToFill" src="/assets/image/icon_{{item.icon}}.png" />
+        <view class="{{item.TypeId === cid?'fc-018FFB':''}}">{{item.TypeName}}</view>
+      </view>
+      <view class="flex" a:if="{{item.children.length>0}}">
+        <tree list="{{item.children}}" direction="column" onSelect="childSelect" onChildSelect="childSelect" pid="{{pid}}" cid="{{cid}}"></tree>
+      </view>
+    </view>
+  </block>
+</view>

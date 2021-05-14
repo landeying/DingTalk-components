@@ -1,0 +1,8 @@
+<view class="flex list">
+  <block a:for="{{statisticalList}}" >
+    <view class="item" key="{{index}}" onTap="navigateToItem" data-id="{{item.id}}">
+      <image mode="scaleToFill" src="/assets/image/{{item.imgUrl}}.png"/>
+      <text>{{item.name}}</text>
+    </view>
+  </block>
+</view>

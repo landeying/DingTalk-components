@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "批量生成条形图",
+  "usingComponents": {
+    "f2-interval": "/components/f2Interval/f2Interval"
+  }
+}

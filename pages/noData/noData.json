@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "暂无数据",
+  "usingComponents": {
+    "no-data": "/components/noData/noData"
+  }
+}

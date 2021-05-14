@@ -1,0 +1,18 @@
+<scroll 
+  class="container" 
+  onTap="tap" 
+  listData="{{listData}}" 
+  showData="{{showData}}" 
+  scrollTop="{{scrollTop}}"
+  onGetData="getData" 
+  onSetShowNoMore="setShowNoMore"
+  lock="{{lock}}"
+>
+  <view slot="scroll">
+    <view a:for="{{itemList}}" class="flex list-item">
+      <view class="flex-0">{{item.id}}：</view>
+      <view class="flex-1">{{item.name}}</view>
+    </view>
+  </view>
+</scroll>
+

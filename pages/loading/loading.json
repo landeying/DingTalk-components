@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "loading",
+  "usingComponents": {
+    "loading": "/components/loading/loading"
+  }
+}

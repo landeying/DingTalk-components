@@ -1,0 +1,17 @@
+<view style="margin-bottom: 60rpx;">
+  <view class="title">基础表格（列数小于4）</view>
+  <table 
+    labelList="{{labelList}}" 
+    propList="{{propList}}" 
+    summationData="{{summationData}}" 
+  />
+</view>
+<view class="divide"></view>
+<view>
+  <view class="title">可横向滑动表格</view>
+  <table 
+    labelList="{{labelList1}}" 
+    propList="{{propList1}}" 
+    summationData="{{summationData1}}" 
+  />
+</view>

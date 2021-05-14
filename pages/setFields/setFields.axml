@@ -1,0 +1,28 @@
+
+<view>
+  <view class="list-item" a:for="{{list}}" key="{{index}}">
+    <view class="item-body fs-28">
+      <block 
+        a:for="{{fields}}" 
+        a:for-item="itm" 
+        a:for-index="idx"
+        a:if="{{selectFields.indexOf(itm.field)!==-1}}"
+        key="{{idx}}" 
+      >
+        <view class="flex" >
+          <text class="flex-0">{{itm.value}}：</text>
+          <text class="flex-1 color-99">{{item[itm.field]?item[itm.field]:'--'}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<button type="primary" onTap="handleShowFields">显示项设置</button>
+
+<!-- 显示项设置 -->
+<set-fields 
+  fields="{{fields}}" 
+  selectFields="{{selectFields}}" 
+  show="{{showSelectFields}}"
+  onClose="handleCloseFields"
+></set-fields>

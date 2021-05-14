@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "表格",
+  "usingComponents": {
+    "table": "/components/table/table"
+  }
+}

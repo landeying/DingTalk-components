@@ -1,0 +1,25 @@
+<!-- 采编中心查询 -->
+<popup 
+  show="{{show}}" 
+  position="bottom"
+  disableScroll="{{false}}"
+  zIndex="999"
+>
+  <view class="popup">
+    <view class="popup-header flex">
+      <view>显示项设置<text class="color-e83005">（可多选）</text></view>
+      <view class="close-popup" onTap="handleClose"></view>
+    </view>
+    <scroll-view scroll-y="{{true}}" class="scroll-view">
+      <view class="fields-wrap flex">
+        <view 
+          class="fields {{selectedFields.indexOf(item.field)!==-1?'selected-field':''}}"
+          a:for="{{fields}}" 
+          key="{{index}}"
+          data-field="{{item.field}}"
+          onTap="handleSelectedFields"
+        >{{item.value}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</popup>

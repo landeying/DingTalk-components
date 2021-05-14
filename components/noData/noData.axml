@@ -1,0 +1,5 @@
+<!-- 暂无数据 -->
+<view a:if="{{show}}" class="no-data">
+  <image mode="scaleToFill" src="/assets/image/img_none.png" class="img_none"/>
+  <view class="data_null">暂无相关数据</view>
+</view>
