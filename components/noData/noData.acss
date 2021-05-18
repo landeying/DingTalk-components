@@ -1,9 +1,13 @@
 /* 无数据展示 */
 
+.no-data {
+  padding-top: 210rpx;
+}
+
 .img_none {
-  margin: 210rpx auto 40rpx;
+  margin: 0 auto 40rpx;
   display: block;
-  width: 364rpx;
+  width: 268rpx;
   height: 238rpx;
 }
 
