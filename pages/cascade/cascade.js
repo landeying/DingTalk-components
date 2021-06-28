@@ -68,9 +68,7 @@ Page({
 */
   getParentList() {
     const { list } = this.data
-    const parentList = list.filter(item => {
-      return item.Superior == 0
-    });
+    const parentList = list.filter(item => item.Superior == 0);
     const treeList = this.getOrderTreeList(list, parentList);
     this.setData({ treeList })
   },
@@ -82,9 +80,7 @@ Page({
    */
   getOrderTreeList(data, dataArr) {
     for (let i = 0; i < dataArr.length; i++) {
-      let childrenArr = data.filter(item => {
-        return item.Superior == dataArr[i].TypeId
-      });
+      let childrenArr = data.filter(item => item.Superior == dataArr[i].TypeId);
       if (dataArr[i].Superior === 0) {
         if (childrenArr.length > 0) dataArr[i].icon = 'files'
         else dataArr[i].icon = 'file'

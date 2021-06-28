@@ -31,12 +31,8 @@ Component({
   didMount() {
   },
   didUpdate() {
-    if (!this.data.lock && this.props.show) {
-      this.handleshow()
-    }
-    if (this.props.clear) {
-      this.handleClear()
-    }
+    if (!this.data.lock && this.props.show) this.handleshow()
+    if (this.props.clear) this.handleClear()
   },
   didUnmount() { },
   methods: {
@@ -61,7 +57,6 @@ Component({
     * @param {object} data 组件数据 name：节点名称, pid：父节点id, cid：子节点id, len：子节点长度
     */
     handleSelectTree(data) {
-      0
       // len=0表示点击项没有有子节点
       const { name, pid, cid, len } = data
       let selectList = this.data.selectList
@@ -113,7 +108,7 @@ Component({
         this.setData({
           lock: true,
           pid: typePid,
-          showSelect: typeId === 0 ? false : true,
+          showSelect: !(typeId === 0),
           selectList: typeId === 0 ? [] : [...initSelectList], // 选项切换列表
         })
       }

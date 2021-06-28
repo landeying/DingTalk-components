@@ -12,6 +12,7 @@
         <view class="{{item.TypeId === cid?'fc-018FFB':''}}">{{item.TypeName}}</view>
       </view>
       <view class="flex" a:if="{{item.children.length>0}}">
+        <!-- 组件递归 -->
         <tree list="{{item.children}}" direction="column" onSelect="childSelect" onChildSelect="childSelect" pid="{{pid}}" cid="{{cid}}"></tree>
       </view>
     </view>

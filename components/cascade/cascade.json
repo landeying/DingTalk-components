@@ -2,6 +2,6 @@
   "component": true,
   "usingComponents": {
     "popup": "mini-ali-ui-rpx/es/popup/index",
-    "tree": "/components/tree/tree"
+    "tree": "/components/cascade/tree/tree"
   }
 }
