@@ -70,7 +70,7 @@ Component({
       this.setData({
         'treeData.typeName': len ? '' : name,
         'treeData.typeId': len ? 0 : cid,
-        showSelect: len ? true : false,
+        showSelect: !!len ,
         pid: cid,
         selectList: [...selectList]
       }, () => {
@@ -95,7 +95,7 @@ Component({
       selectList.splice(index)
       this.setData({
         pid,
-        showSelect: pid ? true : false,
+        showSelect: !!pid,
         selectList: [...selectList]
       })
     },
