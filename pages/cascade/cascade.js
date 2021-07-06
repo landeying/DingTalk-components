@@ -81,13 +81,10 @@ Page({
   getOrderTreeList(data, dataArr) {
     for (let i = 0; i < dataArr.length; i++) {
       let childrenArr = data.filter(item => item.Superior == dataArr[i].TypeId);
-      if (dataArr[i].Superior === 0) {
-        if (childrenArr.length > 0) dataArr[i].icon = 'files'
-        else dataArr[i].icon = 'file'
-      } else {
-        if (childrenArr.length > 0) dataArr[i].icon = 'files2'
-        else dataArr[i].icon = 'file1'
-      }
+      if (dataArr[i].Superior === 0)
+        dataArr[i].icon = childrenArr.length > 0 ? 'files' : 'file'
+      else
+        dataArr[i].icon = childrenArr.length > 0 ? 'files2' : 'file1'
       if (childrenArr.length > 0) {
         dataArr[i].children = childrenArr;
         this.getOrderTreeList(data, childrenArr);
