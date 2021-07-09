@@ -54,3 +54,9 @@ page {
   height: 20rpx;
   background-color: #f5f5f5;
 }
+
+.ellipsis {  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

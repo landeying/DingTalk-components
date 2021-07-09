@@ -6,7 +6,7 @@ Page({
     treeList: [], // 树形结构列表
     list: [
       { TypeId: 1, TypeName: "一级 1", Superior: 0 },
-      { TypeId: 2, TypeName: "一级 2", Superior: 0 },
+      { TypeId: 2, TypeName: "一级 2一级 1一级 1一级 1一级 1一级 1", Superior: 0 },
       { TypeId: 3, TypeName: "一级 3", Superior: 0 },
       { TypeId: 4, TypeName: "一级 4", Superior: 0 },
       { TypeId: 5, TypeName: "二级 2-1", Superior: 2 },

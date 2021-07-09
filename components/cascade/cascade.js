@@ -24,11 +24,15 @@ Component({
     className: '', // 类名
     treeList: Array, // 树列表
     clear: false, // 清空标记
+    proName: String, // 键名-节点名称
+    proId: String, // 键名-子节点id
+    proSuperior: String, // 键名-根节点id
     onClose: () => { }, // 关闭
     onClear: () => { }, // 清空
     onGetName: () => { }, // 获取选中的名字
   },
   didMount() {
+    console.log(this.props.proName)
   },
   didUpdate() {
     if (!this.data.lock && this.props.show) this.handleshow()

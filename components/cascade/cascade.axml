@@ -16,7 +16,7 @@
           <view 
             a:for="{{selectList}}" 
             key="{{index}}"
-            class="select-item flex-0"
+            class="select-item flex-0 ellipsis"
             style="max-width:{{690/selectList.length}}rpx"
             data-pid="{{item.pid}}"
             data-index="{{index}}"
@@ -28,7 +28,15 @@
         </view>
       </view>
       <scroll-view scroll-y="{{true}}" class="scroll-view">
-        <tree list="{{treeList}}" onSelect="select" onChildSelect="childSelect" pid="{{pid}}" cid="{{initTreeData.typeId}}"></tree>  
+        <tree 
+          list="{{treeList}}" 
+          onSelect="select" onChildSelect="childSelect" 
+          pid="{{pid}}" 
+          cid="{{initTreeData.typeId}}" direction="column"
+          proName="{{proName}}"
+          proId="{{proId}}"
+          proSuperior="{{proSuperior}}"
+        ></tree>  
       </scroll-view>
     </view>
   </view>

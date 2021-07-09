@@ -25,9 +25,8 @@
 .select-item {
   padding: 0 20rpx;
   border-right: 1px solid #999;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   box-sizing: border-box;
 }
+
+
 

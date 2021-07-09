@@ -22,4 +22,7 @@
   onClose="onClose" 
   onClear="onClear"
   onGetName="getName"
+  proName="TypeName"
+  proId="TypeId"
+  proSuperior="Superior"
 />

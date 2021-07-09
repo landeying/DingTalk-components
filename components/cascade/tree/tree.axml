@@ -2,18 +2,24 @@
   <block a:for="{{list}}" key="{{index}}">
     <view class="tree-wrap">
       <view class="main flex color-99" onTap="select"
-        data-name="{{item.TypeName}}" 
-        data-cid="{{item.TypeId}}" 
-        data-pid="{{item.Superior}}"
+        data-name="{{item[proName]}}" 
+        data-cid="{{item[proId]}}" 
+        data-pid="{{item[proSuperior]}}"
         data-len="{{item.children?item.children.length:0}}" 
-        a:if="{{item.Superior===pid}}"
+        a:if="{{item[proSuperior]===pid}}"
+        style="width:{{direction==='row'?560/list.length:'auto'}}rpx"
       >
-        <image mode="scaleToFill" src="/assets/image/icon_{{item.icon}}.png" />
-        <view class="{{item.TypeId === cid?'fc-018FFB':''}}">{{item.TypeName}}</view>
+        <image mode="scaleToFill" src="/assets/image/icon_{{item.icon}}.png" class="flex-0"/>
+        <view class="ellipsis {{item.TypeId === cid?'fc-018FFB':''}}">{{item.TypeName}}</view>
       </view>
       <view class="flex" a:if="{{item.children.length>0}}">
         <!-- 组件递归 -->
-        <tree list="{{item.children}}" direction="column" onSelect="childSelect" onChildSelect="childSelect" pid="{{pid}}" cid="{{cid}}"></tree>
+        <tree 
+          list="{{item.children}}" direction="column" onSelect="childSelect" onChildSelect="childSelect" pid="{{pid}}" 
+          cid="{{cid}}" 
+          proName="{{proName}}"
+          proId="{{proId}}"
+          proSuperior="{{proSuperior}}"
       </view>
     </view>
   </block>
