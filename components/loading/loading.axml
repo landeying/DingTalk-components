@@ -1,6 +1,6 @@
 <!-- loading -->
-<view a:if="{{show}}" class="loading flex {{className}}" style="height:{{height}}px">
-  <view class="loader flex">
+<view a:if="{{show}}" class="loading flex {{className}}" style="height:{{height}}px;">
+  <view class="loader flex" style="background: {{className=='loading1'?bgColor:'#fff'}}; color: {{className=='loading1'?textColor:'#666'}}">
     <view class="loader-item"></view>
     <view>{{content}}</view>
   </view>
